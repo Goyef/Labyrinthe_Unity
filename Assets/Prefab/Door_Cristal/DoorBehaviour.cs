@@ -14,8 +14,13 @@ public class DoorBehaviour : MonoBehaviour
     public void TriggerDoor()
     {
         Debug.Log("Le bouton à été déclenché");
-        isOpen = !isOpen;
-        animator.SetBool("IsOpen", isOpen);
+        if (DoorManager.ManageDoor.doorAlreadyOpened == false && isOpen == false)
+        {
+            isOpen = !isOpen;
+            animator.SetBool("IsOpen", isOpen);
+            DoorManager.ManageDoor.doorAlreadyOpened = true;
+        }
+
     }
 
 }
