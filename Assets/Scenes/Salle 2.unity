@@ -584,6 +584,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2136413643693441766, guid: d57995502266371498e698d5086014c3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2518132312620273559, guid: d57995502266371498e698d5086014c3, type: 3}
       propertyPath: m_Name
       value: URP_Emerald Cluster B
@@ -642,6 +646,51 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1149177256}
   m_SourcePrefab: {fileID: 100100000, guid: d57995502266371498e698d5086014c3, type: 3}
+--- !u!1 &257296935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 257296936}
+  - component: {fileID: 257296937}
+  m_Layer: 0
+  m_Name: DoorManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &257296936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257296935}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.159485, y: -2.23791, z: 14.091324}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1357139501}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &257296937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257296935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc00bab4addd2494e949740ebd165a88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  doorAlreadyOpened: 0
 --- !u!1001 &295471997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1853,6 +1902,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: URP_Ruby Cluster B Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8683153841693893959, guid: 11d26be0550a6d640974af2efef2d854, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2456,6 +2509,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2462743014306987537, guid: 3e8c95fda7ed8ac4ca53f144a8ae7759, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2518132312620273559, guid: 3e8c95fda7ed8ac4ca53f144a8ae7759, type: 3}
       propertyPath: m_Name
       value: URP_Saphire Cluster A 1k
@@ -3277,6 +3334,7 @@ Transform:
   - {fileID: 1578372483}
   - {fileID: 141182876}
   - {fileID: 506832233}
+  - {fileID: 257296936}
   - {fileID: 615545521}
   - {fileID: 451452476}
   - {fileID: 1395869332}
