@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BehaviourDoor : MonoBehaviour
+public class BehaviourDoorSimple : MonoBehaviour
 {
     [SerializeField] private Animator animator;
     private bool isOpen = false;
