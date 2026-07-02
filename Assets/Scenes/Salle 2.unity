@@ -3398,7 +3398,7 @@ MonoBehaviour:
     m_InputActionReference: {fileID: 0}
     m_ObjectReferenceObject: {fileID: 0}
     m_ManualValue: {x: 0, y: 0}
-  m_UseGravity: 1
+  m_UseGravity: 0
 --- !u!4 &1059717669 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6848501278353103229, guid: 172885ec894ac6943a32bacc544dc1d4, type: 3}
@@ -3719,7 +3719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eefeb0495ca4dc45baea205a56c6eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  nomDeLaScene: Salle 2
+  nomDeLaScene: Salle 3
   tagDuJoueur: Player
 --- !u!1001 &1279406269
 PrefabInstance:
