@@ -4,6 +4,7 @@ public class DoorBehaviour : MonoBehaviour
 {
     [SerializeField] private bool isOpen;
     public Animator animator;
+    public BoxCollider doorCollider;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,6 +20,7 @@ public class DoorBehaviour : MonoBehaviour
             isOpen = !isOpen;
             animator.SetBool("IsOpen", isOpen);
             DoorManager.ManageDoor.doorAlreadyOpened = true;
+            doorCollider.enabled = false;
         }
 
     }
