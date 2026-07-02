@@ -1459,7 +1459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eefeb0495ca4dc45baea205a56c6eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportToScene
-  nomDeLaScene: 3
+  nomDeLaScene: Salle 2
   tagDuJoueur: Player
 --- !u!1001 &451452475
 PrefabInstance:
@@ -2640,7 +2640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.ContinuousMoveProvider
   m_Mediator: {fileID: 604956397}
   m_TransformationPriority: 0
-  m_MoveSpeed: 1
+  m_MoveSpeed: 3
   m_InAirControlModifier: 0.5
   m_EnableStrafe: 1
   m_EnableFly: 0
@@ -4030,7 +4030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eefeb0495ca4dc45baea205a56c6eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportToScene
-  nomDeLaScene: 1
+  nomDeLaScene: Salle 1
   tagDuJoueur: Player
 --- !u!4 &1059717669 stripped
 Transform:
@@ -6167,63 +6167,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79be358ffb60bf949a53a767ddbe8dd2, type: 3}
---- !u!1001 &1724440193
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8135023674665499069, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_Name
-      value: XR Interaction Simulator
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 497.43237
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.67328
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 88.38309
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
 --- !u!1001 &1737157127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7223,7 +7166,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.31, y: 2.04, z: 0.18}
   m_Center: {x: -0.38, y: 0.96, z: -0.05}
@@ -7617,7 +7560,6 @@ SceneRoots:
   - {fileID: 1803088053}
   - {fileID: 1308324883}
   - {fileID: 123109602}
-  - {fileID: 1724440193}
   - {fileID: 254550899}
   - {fileID: 1548073838}
   - {fileID: 1019981251}

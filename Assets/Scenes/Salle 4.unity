@@ -3931,7 +3931,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5516487406859467972, guid: 45e0f06c750176947862c10346226439, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: 1.1879182
       objectReference: {fileID: 0}
     - target: {fileID: 5516487406859467972, guid: 45e0f06c750176947862c10346226439, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5449,6 +5449,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6519326912259082263, guid: 8a58c26e13db7884ba712393923d0530, type: 3}
+      propertyPath: isOpen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519326912259082263, guid: 8a58c26e13db7884ba712393923d0530, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -6829,7 +6833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.ContinuousMoveProvider
   m_Mediator: {fileID: 176790659}
   m_TransformationPriority: 0
-  m_MoveSpeed: 1
+  m_MoveSpeed: 3
   m_InAirControlModifier: 0.5
   m_EnableStrafe: 1
   m_EnableFly: 0
@@ -6862,7 +6866,7 @@ MonoBehaviour:
     m_InputActionReference: {fileID: 0}
     m_ObjectReferenceObject: {fileID: 0}
     m_ManualValue: {x: 0, y: 0}
-  m_UseGravity: 1
+  m_UseGravity: 0
 --- !u!1001 &2140309466
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -662,67 +662,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80e227181979b9e4db071f4a8ea5eca6, type: 3}
---- !u!1001 &202360539
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8135023674665499069, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_Name
-      value: XR Interaction Simulator
-      objectReference: {fileID: 0}
-    - target: {fileID: 8135023674665499069, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.10288
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -6.94008
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
 --- !u!1001 &233480439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1416,7 +1355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eefeb0495ca4dc45baea205a56c6eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportToScene
-  nomDeLaScene: Salle 8
+  nomDeLaScene: Salle 4
   tagDuJoueur: Player
 --- !u!65 &418784308
 BoxCollider:
@@ -2106,10 +2045,18 @@ PrefabInstance:
       propertyPath: m_SelectInput.m_InputActionReferencePerformed
       value: 
       objectReference: {fileID: 187161793506945269, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    - target: {fileID: 475993091986924850, guid: 45ef4277c26510f4a92329ad72dd2bc8, type: 3}
+      propertyPath: m_ActivateInput.m_InputActionReferencePerformed
+      value: 
+      objectReference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     - target: {fileID: 3974909443558689667, guid: 45ef4277c26510f4a92329ad72dd2bc8, type: 3}
       propertyPath: m_SelectInput.m_InputActionReferencePerformed
       value: 
       objectReference: {fileID: -6131295136447488360, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    - target: {fileID: 3974909443558689667, guid: 45ef4277c26510f4a92329ad72dd2bc8, type: 3}
+      propertyPath: m_ActivateInput.m_InputActionReferencePerformed
+      value: 
+      objectReference: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f, type: 3}
     - target: {fileID: 4986541072729230673, guid: 45ef4277c26510f4a92329ad72dd2bc8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 497.67462
@@ -2160,12 +2107,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2676907901958648233, guid: 45ef4277c26510f4a92329ad72dd2bc8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1350934324}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5740453672588943196, guid: 45ef4277c26510f4a92329ad72dd2bc8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1387204870}
+    - targetCorrespondingSourceObject: {fileID: 5740453672588943196, guid: 45ef4277c26510f4a92329ad72dd2bc8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1387204871}
   m_SourcePrefab: {fileID: 100100000, guid: 45ef4277c26510f4a92329ad72dd2bc8, type: 3}
+--- !u!114 &613327934 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1107424776379439295, guid: 45ef4277c26510f4a92329ad72dd2bc8, type: 3}
+  m_PrefabInstance: {fileID: 613327933}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387204866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0cb9aa70a22847b5925ee5f067c10a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.CoreUtils::Unity.XR.CoreUtils.XROrigin
+--- !u!4 &613327935 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2676907901958648233, guid: 45ef4277c26510f4a92329ad72dd2bc8, type: 3}
+  m_PrefabInstance: {fileID: 613327933}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &615545520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3008,52 +2977,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &1052927471
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1052927473}
-  - component: {fileID: 1052927472}
-  m_Layer: 0
-  m_Name: XR Interaction Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1052927472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052927471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.XRInteractionManager
-  m_StartingHoverFilters: []
-  m_StartingSelectFilters: []
---- !u!4 &1052927473
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052927471}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 496.92545, y: 0.23211157, z: 90.27405}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1055420277
 GameObject:
   m_ObjectHideFlags: 0
@@ -3381,6 +3304,86 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1699234967074370696, guid: 80e227181979b9e4db071f4a8ea5eca6, type: 3}
   m_PrefabInstance: {fileID: 1172010227}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1207256896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1207256897}
+  - component: {fileID: 1207256898}
+  m_Layer: 0
+  m_Name: MoveProvider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1207256897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207256896}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1350934324}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1207256898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207256896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 626a4d6723d6ad24b9aebb811ad5a3dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Locomotion.Movement.ContinuousMoveProvider
+  m_Mediator: {fileID: 1350934325}
+  m_TransformationPriority: 0
+  m_MoveSpeed: 3
+  m_InAirControlModifier: 0.5
+  m_EnableStrafe: 1
+  m_EnableFly: 0
+  m_ForwardSource: {fileID: 0}
+  m_LeftHandMoveInput:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Left Hand Move
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: 0ae540e0-72d3-4781-baba-a206e1e77673
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: {x: 0, y: 0}
+  m_RightHandMoveInput:
+    m_InputSourceMode: 2
+    m_InputAction:
+      m_Name: Right Hand Move
+      m_Type: 0
+      m_ExpectedControlType: Vector2
+      m_Id: cf37fb6f-4d32-49fc-b1ce-3b2c48e23eed
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReference: {fileID: 0}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualValue: {x: 0, y: 0}
+  m_UseGravity: 0
 --- !u!4 &1239362902 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1699234967074370696, guid: 80e227181979b9e4db071f4a8ea5eca6, type: 3}
@@ -4030,6 +4033,68 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9097891517772665973, guid: a2c0c3aca65defd4d9d259916215d53d, type: 3}
   m_PrefabInstance: {fileID: 1342194174}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1350934323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1350934324}
+  - component: {fileID: 1350934326}
+  - component: {fileID: 1350934325}
+  m_Layer: 0
+  m_Name: Locomotion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1350934324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350934323}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1207256897}
+  m_Father: {fileID: 613327935}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1350934325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350934323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa7b4195685c3846be746c74f0ab2f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Locomotion.LocomotionMediator
+--- !u!114 &1350934326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350934323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a26c941eb8a46f7b6d00416227ab8c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Locomotion.XRBodyTransformer
+  m_XROrigin: {fileID: 613327934}
+  m_BodyPositionEvaluatorObject: {fileID: 0}
+  m_ConstrainedBodyManipulatorObject: {fileID: 0}
+  m_UseCharacterControllerIfExists: 1
 --- !u!1 &1357139500
 GameObject:
   m_ObjectHideFlags: 0
@@ -4164,6 +4229,31 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!143 &1387204871
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387204866}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!1001 &1395869331
 PrefabInstance:
@@ -4868,7 +4958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8eefeb0495ca4dc45baea205a56c6eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TeleportToScene
-  nomDeLaScene: 'Salle 7 '
+  nomDeLaScene: Salle fin
   tagDuJoueur: Player
 --- !u!65 &1671067873
 BoxCollider:
@@ -5492,6 +5582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DoorBehaviourSimple
   isOpen: 0
   animator: {fileID: 1958221056}
+  doorCollider: {fileID: 0}
 --- !u!4 &1992042394 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1699234967074370696, guid: 80e227181979b9e4db071f4a8ea5eca6, type: 3}
@@ -5516,6 +5607,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DoorBehaviourSimple
   isOpen: 0
   animator: {fileID: 2022209887}
+  doorCollider: {fileID: 0}
 --- !u!1001 &2044241289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5617,6 +5709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DoorBehaviourSimple
   isOpen: 0
   animator: {fileID: 2057526848}
+  doorCollider: {fileID: 0}
 --- !u!1001 &2087152965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5858,9 +5951,7 @@ SceneRoots:
   - {fileID: 1136746140}
   - {fileID: 908773611}
   - {fileID: 235111068}
-  - {fileID: 1052927473}
   - {fileID: 613327933}
-  - {fileID: 202360539}
   - {fileID: 1279174066}
   - {fileID: 1671067870}
   - {fileID: 418784305}
