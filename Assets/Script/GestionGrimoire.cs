@@ -1,64 +1,28 @@
 using UnityEngine;
-using UnityEngine.InputSystem; // OBLIGATOIRE pour le nouveau système d'Input
 
 public class GestionGrimoire : MonoBehaviour
 {
-    [Header("Éléments d'UI")]
-    public GameObject grimoirePanel;
-
-    private bool estOuvert = false;
+    [SerializeField] private bool estOuvert;
+    public GameObject grimoirePanel; // Ton Canvas en World Space au-dessus du pupitre
 
     void Start()
     {
-        if (grimoirePanel != null)
-            grimoirePanel.SetActive(false);
-    }
-
-    void Update()
-    {
-        // Vérifie si le clavier est connecté et si la touche G vient d'être pressée
-        if (Keyboard.current != null && Keyboard.current.gKey.wasPressedThisFrame)
-        {
-            if (!estOuvert)
-            {
-                OuvrirGrimoire();
-            }
-            else
-            {
-                FermerGrimoire();
-            }
-        }
-
-        // Permet aussi de fermer avec la touche Échap (Escape)
-        if (estOuvert && Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
-        {
-            FermerGrimoire();
-        }
-    }
-
-    public void OuvrirGrimoire()
-    {
-        estOuvert = true;
-
-        if (grimoirePanel != null)
-        {
-            grimoirePanel.SetActive(true);
-        }
-
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-    }
-
-    public void FermerGrimoire()
-    {
         estOuvert = false;
+        if (grimoirePanel != null)
+        {
+            grimoirePanel.SetActive(estOuvert);
+        }
+    }
+
+    // C'est cette fonction que tu vas lier à ton système de Grab VR
+    public void TriggerGrimoire()
+    {
+        Debug.Log("Le porte-grimoire à été déclenché");
 
         if (grimoirePanel != null)
         {
-            grimoirePanel.SetActive(false);
+            estOuvert = !estOuvert; // Alterne entre ouvert et fermé
+            grimoirePanel.SetActive(estOuvert); // Active ou désactive le Canvas
         }
-
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
     }
 }
