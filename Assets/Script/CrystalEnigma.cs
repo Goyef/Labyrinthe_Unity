@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class CrystalEnigma : MonoBehaviour
 {
     [Header("Configuration des Portes")]
-    public List<DoorBehaviour> toutesLesPortes; // Glissez vos 3 portes ici
+    public List<DoorBehaviourSimple> toutesLesPortes; // Glissez vos 3 portes ici
 
     [Header("Configuration de l'Ordre (ID des Cristaux)")]
     [Tooltip("Exemple : 1, puis 2, puis 3")]
@@ -41,7 +41,7 @@ public class CrystalEnigma : MonoBehaviour
 
     private void OuvrirToutesLesPortes()
     {
-        foreach (DoorBehaviour porte in toutesLesPortes)
+        foreach (DoorBehaviourSimple porte in toutesLesPortes)
         {
             porte.TriggerDoor(); // Appelle votre fonction existante
         }
