@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DoorBehaviourSimple : MonoBehaviour
+public class OpenAlldDoor : MonoBehaviour
 {
     [SerializeField] private bool isOpen;
     public Animator animator;
@@ -15,9 +15,12 @@ public class DoorBehaviourSimple : MonoBehaviour
     public void TriggerDoor()
     {
         Debug.Log("Le bouton à été déclenché");
-        isOpen = !isOpen;
-        animator.SetBool("IsOpen", isOpen);
-        doorCollider.enabled = !isOpen ;
+        if (isOpen == false)
+        {
+            isOpen = !isOpen;
+            animator.SetBool("IsOpen", isOpen);
+            doorCollider.enabled = false;
+        }
 
     }
 
